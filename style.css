@@ -1,21 +1,26 @@
 body {
-    background-color: #f0f2f5;
-    font-family: Arial, sans-serif;
+    background-color: #e8ecf1;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
     display: flex;
     justify-content: center;
-    padding-top: 40px;
+    padding-top: 50px;
 }
 .box {
-    background: white;
-    width: 500px;
-    padding: 20px;
-    border-radius: 8px;
+    background: #ffffff;
+    width: 520px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
-h1 { text-align: center; margin-bottom: 20px; }
-.top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
-button { padding: 8px 12px; cursor: pointer; }
-.weekdays { display: grid; grid-template-columns: repeat(7, 1fr); text-align: center; font-weight: bold; margin-bottom: 10px; color: #777; }
-.grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; }
-.day { background: #e9ecef; padding: 15px 0; text-align: center; border-radius: 4px; }
+h1 { text-align: center; color: #333; margin-bottom: 20px; font-size: 22px; }
+.top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+button { padding: 8px 16px; background: #4a90e2; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 14px; }
+button:hover { background: #357abd; }
+#monthText { font-size: 18px; font-weight: bold; color: #444; }
+.weekdays { display: grid; grid-template-columns: repeat(7, 1fr); text-align: center; font-weight: bold; margin-bottom: 12px; color: #888; font-size: 14px; }
+.grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; }
+.day { background: #f4f6f9; padding: 18px 0; text-align: center; border-radius: 6px; cursor: pointer; transition: 0.2s; }
+.day:hover { background: #dbe4f0; }
 .today { background: #4a90e2; color: white; font-weight: bold; }
-.other { color: #bbb; }
+.other { color: #c0c5cc; cursor: default; }
+.other:hover { background: #f4f6f9; }
